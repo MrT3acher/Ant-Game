@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    public void Eaten()
+    public int value;
+    
+    void OnTriggerEnter2D(Collision2D col)
     {
-
+        Eaten(col.gameObject);
+    }
+    public void Eaten(GameObject g)
+    {
+        g.GetComponent<AntGroup>().Increase(value);
     }
 }
