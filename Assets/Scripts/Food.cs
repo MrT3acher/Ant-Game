@@ -6,12 +6,13 @@ public class Food : MonoBehaviour
 {
     public int value;
     
-    void OnTriggerEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         Eaten(col.gameObject);
     }
     public void Eaten(GameObject g)
     {
         g.GetComponent<AntGroup>().Increase(value);
+        Destroy(gameObject);
     }
 }

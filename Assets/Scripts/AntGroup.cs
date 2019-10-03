@@ -12,7 +12,7 @@ public class AntGroup : MonoBehaviour
             
        
     }
-    void OnCollisionEnter(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
        
     }
