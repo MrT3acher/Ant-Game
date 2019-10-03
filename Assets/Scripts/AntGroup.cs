@@ -6,19 +6,6 @@ public class AntGroup : MonoBehaviour
 {
     public int count;
 
-    [SerializeField]
-    private int id;
-
-
-    public void Player1Move()
-    {
-
-    }
-    public void Player2Move()
-    {
-
-    }
-
     public void Increase(int value)
     {
 
@@ -27,10 +14,5 @@ public class AntGroup : MonoBehaviour
     public void Decrease(int value)
     {
 
-    }
-
-    void Update()
-    {
-        
     }
 }
